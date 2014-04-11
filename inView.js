@@ -10,6 +10,9 @@
 	
 	$.fn.inView = function( paddingTop = 0, paddingBottom = 0 ) {
 		
+		paddingTop = paddingTop || 0;
+		paddingBottom = paddingBottom || 0;
+		
 		// reverse padding value to act as expected
 		paddingTop = ( paddingTop > 0 ) ? -paddingTop : Math.abs( paddingTop );
 		
